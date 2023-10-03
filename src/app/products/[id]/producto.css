@@ -1,0 +1,39 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    height: 100vh;
+    /* Establece la altura al 100% del viewport */
+}
+
+.product-card {
+    display: inline-block;
+    width: 500px;
+    /* Ancho fijo */
+    min-height: 200px;
+    /* Altura mínima */
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.product-card h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card h2,
+.product-card p {
+    margin: 5px 0;
+}

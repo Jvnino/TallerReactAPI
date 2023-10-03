@@ -1,37 +1,43 @@
 import Link from 'next/link';
 
 import './globals.css'
-export default function Header({children}){
+export default function Header({ children }) {
 
-  return(
-    
-    <div className="General">
-      <header>
-        <h1>Nombre de la App</h1>
-      </header>
+  return (
+    <html lang="en">
 
-      <div className="container">
-        <aside className="sidebar">
-          <ul>   
-          <Link href="/Carts/CardDetail">
-              Carts
-            </Link>
-            <Link href="/Carts/CartsDetails/Productos">
-              Products
-            </Link>
-            <li>New Carts</li>
-            <li>New products</li>
-          </ul>
-        </aside>
+      <body>
+        <div className="General">
+          <header>
+            <h1>Consumo React API</h1>
+          </header>
 
-        <main className="content">
-          {children}
-        </main>
-      </div>
+          <div className="container">
+            <aside className="sidebar">
+              <ul>
+                <li>
+                  <Link href="/Carts">Carts</Link>
+                </li>
+                <li>
+                  <Link href="/products">Products</Link>
+                </li>
+                <li>New Carts</li>
+                <li>New products</li>
+              </ul>
+            </aside>
 
-      <footer>
-        <p>Desarrollado por: Jessica Niño 2023</p>
-      </footer>
-    </div>
+            <main className="content">
+              {children}
+            </main>
+          </div>
+
+          <footer>
+            <p>Desarrollado por: Jessica Niño 2023</p>
+          </footer>
+        </div>
+      </body>
+    </html>
+
+
   )
 }
