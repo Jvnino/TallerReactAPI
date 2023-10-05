@@ -21,8 +21,12 @@ export default function Header({ children }) {
                 <li>
                   <Link href="/products">Products</Link>
                 </li>
-                <li>New Carts</li>
-                <li>New products</li>
+                <li>
+                  <Link href="/addCart">New cart</Link>
+                </li>
+                <li>
+                  <Link href="/addProduct">New product</Link>
+                </li>
               </ul>
             </aside>
 
